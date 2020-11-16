@@ -42,7 +42,7 @@ spec:
           value: "0"
         - name: FILEUPLOADER_FOLDER_ROOT
           value: /data
-        image: {{ .Values.image.rtspfileuploadercontainer }}
+        image: busybox
         imagePullPolicy: Always
         name: cv-rtsp-server-with-fileupload-fileupload
         ports:
